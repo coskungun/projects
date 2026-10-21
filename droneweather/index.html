@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FlyNoFly Gizlilik Politikası</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1f2328;
+    --muted: #59636e;
+    --accent: #0b6fb5;
+    --border: #e5e7eb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --text: #e6e6e6;
+      --muted: #a0a0a0;
+      --accent: #4fa8e8;
+      --border: #2c2c2c;
+    }
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; }
+  h2 { font-size: 1.25rem; margin: 32px 0 8px; }
+  .updated { color: var(--muted); margin: 0 0 24px; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.25rem; }
+  li { margin: 4px 0; }
+  hr { border: 0; border-top: 1px solid var(--border); margin: 56px 0; }
+  nav { margin-bottom: 24px; }
+</style>
+</head>
+<body>
+<main>
+
+<nav><a href="#tr">Türkçe</a> · <a href="#en">English</a></nav>
+
+<section id="tr" lang="tr">
+<h1>FlyNoFly Gizlilik Politikası</h1>
+<p class="updated">Son güncelleme: 21 Ekim 2026</p>
+
+<p>Bu politika, FlyNoFly iOS uygulaması, Apple Watch uygulaması, widget'ları ve Live Activity özelliğinin (“Uygulama”) hangi verileri işlediğini, neden işlediğini ve bu konudaki seçeneklerinizi açıklar.</p>
+
+<h2>Özet</h2>
+<ul>
+  <li>Uygulamada hesap ya da giriş yoktur. Adınızı, e-posta adresinizi veya telefon numaranızı istemeyiz.</li>
+  <li>Konumunuz yalnızca bulunduğunuz yerin uçuş koşullarını, yakındaki havalimanı verilerini ve uçuşa yasak bölgeleri göstermek için kullanılır.</li>
+  <li>Drone profiliniz, kayıtlı konumlarınız, kontrol listeniz ve ayarlarınız yalnızca cihazınızda saklanır. Bu verilere biz erişemeyiz.</li>
+  <li>Kendi sunucumuz yoktur. Verilerinizi satmayız. Sizi başka şirketlerin uygulama ve sitelerinde izlemeyiz (tracking).</li>
+</ul>
+
+<h2>Konum</h2>
+<p>İzin verirseniz konumunuzu yalnızca uygulama açıkken alırız. İzin vermezseniz konumları haritadan veya aramayla elle ekleyebilirsiniz.</p>
+<ul>
+  <li>Hava durumu tahmini için koordinatlarınız Apple Weather'a (WeatherKit) gönderilir. Bu hizmete ulaşılamazsa yedek olarak Norveç Meteoroloji Enstitüsü'ne (MET Norway) gönderilir.</li>
+  <li>En yakın havalimanının METAR raporunu bulmak için konumunuzun çevresindeki bölge aviationweather.gov'a (ABD Ulusal Hava Servisi) sorulur.</li>
+  <li>Harita üzerinde yer arama Apple Haritalar hizmetiyle yapılır.</li>
+  <li>Bu isteklerde sizi tanımlayan bir bilgi (hesap, isim, cihaz kimliği) yer almaz.</li>
+  <li>Uçuşa yasak bölge kontrolü tamamen cihazınızda yapılır. Bu kontrol için konumunuz hiçbir yere gönderilmez.</li>
+  <li>Arka planda konum takibi yapılmaz. Uçuş penceresi bildirimlerini açtıysanız, arka plandaki tahmin güncellemesi uygulamada en son kullanılan konumla yapılır. Bu konum cihazınızda saklanır.</li>
+</ul>
+
+<h2>Cihazınızda kalan veriler</h2>
+<p>Drone profili ve modeli, kayıtlı konumlar, uçuş öncesi kontrol listesi, birim tercihleri ve diğer ayarlar cihazınızda saklanır. Widget'lar ve Apple Watch uygulaması bu verileri cihazınızdaki paylaşılan alan ve iPhone ile saat arasındaki doğrudan bağlantı üzerinden alır. Bu veriler bize gönderilmez.</p>
+
+<h2>Bildirimler</h2>
+<p>Uçuş penceresi bildirimleri cihazınızda yerel bildirim olarak kurulur. Genel duyurular için OneSignal hizmetini kullanırız. OneSignal bildirim gönderebilmek için cihazınıza ait bir bildirim kimliği (push token) ve bildirimlerin açılıp açılmadığı gibi temel etkileşim bilgilerini işler. Bildirimleri iOS Ayarlar'dan istediğiniz zaman kapatabilirsiniz.</p>
+
+<h2>Analiz ve hata raporları</h2>
+<p>Uygulamayı geliştirmek için Google Firebase hizmetlerini kullanırız:</p>
+<ul>
+  <li><strong>Firebase Analytics:</strong> Hangi ekranların ve özelliklerin kullanıldığına dair anonim kullanım bilgileri.</li>
+  <li><strong>Firebase Crashlytics:</strong> Uygulama çöktüğünde cihaz modeli, iOS sürümü ve hata ayrıntılarını içeren çökme raporları.</li>
+  <li><strong>Firebase Remote Config:</strong> Uygulama ayarlarının güncellemeye gerek kalmadan uzaktan değiştirilebilmesi.</li>
+</ul>
+<p>Bu hizmetler rastgele oluşturulmuş uygulama kurulum kimlikleri kullanır. Bu kimlikler adınız veya iletişim bilgilerinizle ilişkilendirilmez. Konumunuz analiz verilerine eklenmez.</p>
+
+<h2>Reklamlar</h2>
+<p>Ücretsiz sürümde Google AdMob aracılığıyla banner reklam gösterilebilir. Premium abonelerde reklam yoktur.</p>
+<ul>
+  <li>Reklam kimliğinize (IDFA) erişim izni istemeyiz.</li>
+  <li>AdMob reklamı sunmak, ölçmek ve dolandırıcılığı önlemek için IP adresinden çıkarılan yaklaşık konum, cihaz bilgileri ve reklam etkileşimi gibi verileri işleyebilir.</li>
+  <li>Ayrıntılar için: <a href="https://policies.google.com/technologies/partner-sites">Google iş ortaklarının verileri nasıl kullandığı</a> ve <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>.</li>
+</ul>
+
+<h2>Satın almalar</h2>
+<p>Premium abonelik Apple'ın App Store uygulama içi satın alma sistemi üzerinden yapılır. Ödeme bilgilerinizi görmeyiz ve saklamayız. Aboneliğinizi App Store hesap ayarlarınızdan yönetebilir veya iptal edebilirsiniz. Ayrıntılar için <a href="https://www.apple.com/legal/privacy/">Apple Gizlilik Politikası</a>.</p>
+
+<h2>Paylaşım</h2>
+<p>Hava durumu kartını paylaşmak istediğinizde iOS paylaşım menüsü açılır. Görsel yalnızca sizin seçtiğiniz uygulamaya veya kişiye gider. Fotoğraf arşivinize erişim izni istemeyiz.</p>
+
+<h2>Üçüncü taraf hizmetler</h2>
+<ul>
+  <li>Apple (WeatherKit, Haritalar, App Store): <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
+  <li>MET Norway: <a href="https://www.met.no/en/About-us/privacy">met.no/en/About-us/privacy</a></li>
+  <li>aviationweather.gov (NOAA): <a href="https://www.weather.gov/privacy">weather.gov/privacy</a></li>
+  <li>Google Firebase (Analytics, Crashlytics, Remote Config): <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+  <li>Google AdMob: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+  <li>OneSignal: <a href="https://onesignal.com/privacy_policy">onesignal.com/privacy_policy</a></li>
+</ul>
+<p>Manyetik fırtına (Kp) tahmini NOAA Uzay Hava Tahmin Merkezi'nden alınır. Bu istekte konumunuz gönderilmez.</p>
+
+<h2>Uçuş sorumluluğu</h2>
+<p>Uygulamadaki skorlar, uyarılar ve uçuşa yasak bölge bilgileri yalnızca karar desteği içindir; eksik veya hatalı olabilir. Uçuştan önce yerel kurallara ve SHGM düzenlemelerine uymak, gerekli izinleri almak ve son kararı vermek pilotun sorumluluğundadır.</p>
+
+<h2>Çocuklar</h2>
+<p>Uygulama 13 yaşından küçük çocuklara yönelik değildir ve bilerek çocuklardan kişisel veri toplamayız.</p>
+
+<h2>Veri saklama ve silme</h2>
+<p>Hesap olmadığı için sunucularımızda size ait bir profil tutulmaz. Uygulamayı silmek cihazınızdaki verileri kaldırır. Üçüncü taraf hizmetlerin tuttuğu veriler, kendi politikalarındaki süreler boyunca saklanır.</p>
+
+<h2>Değişiklikler</h2>
+<p>Bu politikayı zaman zaman güncelleyebiliriz. Güncel sürüm her zaman bu sayfada yer alır ve üstteki tarih değişir.</p>
+
+<h2>İletişim</h2>
+<p>Sorularınız ve destek talepleriniz için: <a href="mailto:gelisimedestekol@gmail.com">gelisimedestekol@gmail.com</a></p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<h1>FlyNoFly Privacy Policy</h1>
+<p class="updated">Last updated: October 21, 2026</p>
+
+<p>This policy explains what data the FlyNoFly iOS app, Apple Watch app, widgets and Live Activity (the “App”) process, why, and what choices you have.</p>
+
+<h2>Summary</h2>
+<ul>
+  <li>The App has no accounts or sign-in. We do not ask for your name, email address or phone number.</li>
+  <li>Your location is used only to show flight conditions where you are, nearby airport data and no-fly zones.</li>
+  <li>Your drone profile, saved locations, checklist and settings are stored only on your device. We cannot access them.</li>
+  <li>We run no servers of our own. We do not sell your data and we do not track you across other companies' apps or websites.</li>
+</ul>
+
+<h2>Location</h2>
+<p>If you grant permission, we access your location only while the App is in use. If you decline, you can add locations manually from the map or by search.</p>
+<ul>
+  <li>To get the forecast, your coordinates are sent to Apple Weather (WeatherKit). If that service is unavailable, they are sent to the Norwegian Meteorological Institute (MET Norway) as a fallback.</li>
+  <li>To find the nearest airport's METAR report, the area around your location is queried from aviationweather.gov (US National Weather Service).</li>
+  <li>Place search on the map uses Apple Maps.</li>
+  <li>These requests contain nothing that identifies you (no account, name or device identifier).</li>
+  <li>No-fly zone checks run entirely on your device. Your location is not sent anywhere for them.</li>
+  <li>There is no background location tracking. If you turn on flight window notifications, background forecast updates use the location you last used in the App, which is stored on your device.</li>
+</ul>
+
+<h2>Data that stays on your device</h2>
+<p>Your drone profile and model, saved locations, pre-flight checklist, unit preferences and other settings are stored on your device. Widgets and the Apple Watch app get this data through a shared container on your device and the direct connection between your iPhone and watch. This data is never sent to us.</p>
+
+<h2>Notifications</h2>
+<p>Flight window notifications are scheduled locally on your device. For general announcements we use OneSignal. To deliver notifications, OneSignal processes a push token for your device and basic interaction data, such as whether a notification was opened. You can turn notifications off at any time in iOS Settings.</p>
+
+<h2>Analytics and crash reports</h2>
+<p>We use Google Firebase services to improve the App:</p>
+<ul>
+  <li><strong>Firebase Analytics:</strong> anonymous usage information about which screens and features are used.</li>
+  <li><strong>Firebase Crashlytics:</strong> crash reports including device model, iOS version and error details.</li>
+  <li><strong>Firebase Remote Config:</strong> lets us adjust App settings remotely without an update.</li>
+</ul>
+<p>These services use randomly generated app installation identifiers that are not associated with your name or contact details. Your location is not added to analytics data.</p>
+
+<h2>Advertising</h2>
+<p>The free version may show banner ads through Google AdMob. Premium subscribers see no ads.</p>
+<ul>
+  <li>We do not ask for permission to access your advertising identifier (IDFA).</li>
+  <li>To serve and measure ads and to prevent fraud, AdMob may process data such as approximate location derived from your IP address, device information and ad interactions.</li>
+  <li>More information: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+</ul>
+
+<h2>Purchases</h2>
+<p>Premium subscriptions are handled by Apple's App Store in-app purchase system. We never see or store your payment details. You can manage or cancel your subscription in your App Store account settings. See the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</p>
+
+<h2>Sharing</h2>
+<p>When you share a conditions card, the iOS share sheet opens and the image goes only to the app or person you choose. We do not ask for access to your photo library.</p>
+
+<h2>Third-party services</h2>
+<ul>
+  <li>Apple (WeatherKit, Maps, App Store): <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
+  <li>MET Norway: <a href="https://www.met.no/en/About-us/privacy">met.no/en/About-us/privacy</a></li>
+  <li>aviationweather.gov (NOAA): <a href="https://www.weather.gov/privacy">weather.gov/privacy</a></li>
+  <li>Google Firebase (Analytics, Crashlytics, Remote Config): <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+  <li>Google AdMob: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+  <li>OneSignal: <a href="https://onesignal.com/privacy_policy">onesignal.com/privacy_policy</a></li>
+</ul>
+<p>The geomagnetic (Kp) forecast comes from the NOAA Space Weather Prediction Center. Your location is not sent with that request.</p>
+
+<h2>Flight responsibility</h2>
+<p>Scores, warnings and no-fly zone information in the App are for decision support only and may be incomplete or inaccurate. Following local rules and aviation regulations, getting the required permits and making the final call before every flight remain the pilot's responsibility.</p>
+
+<h2>Children</h2>
+<p>The App is not directed at children under 13, and we do not knowingly collect personal data from children.</p>
+
+<h2>Retention and deletion</h2>
+<p>Since there are no accounts, we keep no profile about you on our servers. Deleting the App removes its data from your device. Data held by third-party services is retained according to their own policies.</p>
+
+<h2>Changes</h2>
+<p>We may update this policy from time to time. The current version is always on this page, and the date above will change.</p>
+
+<h2>Contact</h2>
+<p>Questions and support: <a href="mailto:gelisimedestekol@gmail.com">gelisimedestekol@gmail.com</a></p>
+</section>
+
+</main>
+</body>
+</html>
